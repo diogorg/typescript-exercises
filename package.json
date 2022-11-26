@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "exec-one": "ts-node-dev -r tsconfig-paths/register --inspect --transpile-only --ignore-watch node_modules src/quest_one.ts",
-    "test": "jest --passWithNoTests --watch",
+    "test": "jest --watch",
+    "test:staged": "jest --passWithNoTests",
+    "test:clean": "jest --clearCache",
     "lint": "eslint . --ext .ts",
     "lint-fix": "eslint . --ext .ts --fix"
   },
